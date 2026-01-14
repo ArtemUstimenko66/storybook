@@ -1,0 +1,115 @@
+.toastContainer { 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    padding: 0 20px;
+}
+
+.toast { 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
+    max-width: 100%;
+    animation: slideIn 0.3s ease-out;
+    transition: all 0.3s ease;
+}
+
+.toast.success {
+  background-color: #10b981; 
+  color: #ffffff;         
+}
+
+.toast.error {
+  background-color: #ef4444;  
+  color: #ffffff;            
+}
+
+.toast.warning {
+  background-color: #f59e0b;  
+  color: #ffffff;             
+}
+
+.toast.info {
+  background-color: #3b82f6;  
+  color: #ffffff;               
+}
+
+.toast.hide {
+    animation: slideOut 0.3s ease-in;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-width: 20px;   
+  height: 20px;
+  
+  color: #ffffff;
+}
+
+.message { 
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.closeButton { 
+    background: transparent;
+    border: none;
+    cursor: pointer;    
+    color: #ffffff;
+}
+
+.closeButton svg { 
+    display: block;
+}
+
+.closeButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 1;
+}
+
+.closeButton:active { 
+    transform: scale(0.9);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateX(0);
+    
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    
+    opacity: 1;
+  }
+  
+  to {
+    transform: translateX(100%);
+    
+    opacity: 0;
+  }
+}

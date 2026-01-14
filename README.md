@@ -1,26 +1,34 @@
-# storybook
+# Storybook Project
 
-# Components
+A simple Storybook project showcasing reusable React components.
+
+---
+
+## Components
 
 ### Input Component
+
+A versatile input field with several useful features:
 
 **Features:**
 - Password visibility toggle
 - Clearable input with X button
-- Multiple types (text, password, email, number)
+- Multiple types: text, password, email, number
 - Disabled state
 - Label support
 
-**Screenshots:**
+---
 
-<img src="./screenshots/defaultInput.png" width="400">
-*Default input field*
+### Screenshots
 
-<img src="./screenshots/passwordInput.png" width="400">
-*Password input with visibility toggle*
+**Default input field**  
+![Default input](screenshots/defaultInput.png)
 
-<img src="./screenshots/clearableInput.png" width="400">
-*Input with clear button*
+**Password input with visibility toggle**  
+![Password input](screenshots/passwordInput.png)
 
-<img src="./screenshots/disableInput.png" width="400">
-*Disabled state*
+**Input with clear button**  
+![Clearable input](screenshots/clearableInput.png)
+
+**Disabled state**  
+![Disabled input](screenshots/disableInput.png)
